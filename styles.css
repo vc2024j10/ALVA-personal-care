@@ -174,7 +174,7 @@ body {
   }
 
   .nav-icons input {
-    width: 50%;
+    width: 90%;
   }
 
   #secondary .links {
@@ -193,6 +193,7 @@ body {
   
   #banner-container img {
     min-width: 100%;
+    min-height: 100%;
     display: none;
     object-fit: cover;
   }
@@ -202,6 +203,10 @@ body {
   }
 
   #various {
+    display: grid;
+    grid-template-areas: 
+    "A B"
+    "C D";
     flex-wrap: wrap;
     gap: 20px;
     margin: 20px;
@@ -210,6 +215,10 @@ body {
   .description {
     max-width: 100%;
     flex-direction: column;
+  }
+
+  .description p {
+    font-size: 16px;
   }
 }
 
@@ -244,6 +253,14 @@ body {
 #banner-container img.active {
   display: block;
 }
+
+#various {
+  display: grid;
+  grid-template-areas: 
+  "A B"
+  "C D";
+  flex-wrap: wrap;
+  }
 
   .description p {
     font-size: 12px;
