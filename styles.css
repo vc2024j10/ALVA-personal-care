@@ -186,10 +186,19 @@ body {
     height: 300px;
   }
 
-  #main-banner img {
-    display: block;
+  #banner-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #banner-container img {
+    min-width: 100%;
+    display: none;
     object-fit: cover;
-    width: 100%;
+  }
+  
+  #banner-container img.active {
+    display: block;
   }
 
   #various {
@@ -221,6 +230,20 @@ body {
   #main-banner {
     height: 200px;
   }
+
+  #banner-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+#banner-container img {
+  min-width: 100%;
+  display: none;
+}
+
+#banner-container img.active {
+  display: block;
+}
 
   .description p {
     font-size: 12px;
